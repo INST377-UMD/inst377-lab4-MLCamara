@@ -49,7 +49,7 @@
         <main>
             <div>
                 <div class="section">
-                    <form onsubmit="msg();">
+                    <form onsubmit="msg(); return false;">
                         <label for="name">Name:</label>
                         <input type="text" id="fullname" name="name" placeholder="Enter Full name" required></input>
                         <button type='submit' id="alertme">Alert Me!</button>
@@ -59,7 +59,7 @@
                     <button id="color" onclick="color();">Change Color</button>
                 </div>
                 <div class="section">
-                    <form onsubmit="validateText();">
+                    <form onsubmit="validateText();  return false;">
                         <label for="validate">Text Tester:</label>
                         <input type="text" id="validate" placeholder="Enter Valid Text" name="text"></input>
                         <button type=submit id="submit">Validate Text</button>
