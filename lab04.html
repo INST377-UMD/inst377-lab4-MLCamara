@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Lab04-Mohamed Camara</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <style>
+            body{
+                background-color: cadetblue;
+                transition: background-color 1s ease-in;
+            }
+            .section{
+                display: inline-flex;
+                justify-content:center;
+                border-style: solid;
+                border-radius: 5px;
+                margin: 0.5rem;
+                padding: 1rem;
+                border-color: rgb(204, 204, 204);
+                background-color: chocolate;
+                color: whitesmoke;
+                width: 45%;
+                
+            }
+            input{
+                margin-bottom: 1.3rem; 
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div style="margin: 1rem;">
+                <h1 id="heading"><b>INST377 - LAB 4</b></h1>
+            </div>
+        </header>
+        <main>
+            <div>
+                <div class="section">
+                    <form onsubmit="msg(); return false;">
+                        <label for="name">Name:</label>
+                        <input type="text" id="fullname" name="name" placeholder="Enter Full name" required></input>
+                        <button type='submit' id="alertme">Alert Me!</button>
+                    </form>
+                </div>
+                <div class="section">
+                    <button id="color" onclick="color();">Change Color</button>
+                </div>
+                <div class="section">
+                    <form onsubmit="validateText();  return false;">
+                        <label for="validate">Text Tester:</label>
+                        <input type="text" id="validate" placeholder="Enter Valid Text" name="text"></input>
+                        <button type=submit id="submit">Validate Text</button>
+                    </form>
+
+                </div>
+                <div class="section">
+                    <button id="add" onclick="addText();">Add Text</button>
+                </div>
+            </div>
+        </main>
+        <!--script for the buttons!-->
+        <script type="text/JavaScript" src="lab04.js"></script>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
